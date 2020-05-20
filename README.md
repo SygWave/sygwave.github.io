@@ -4,4 +4,4 @@ The homepage of SygWave
 
 ## Owner
 
-* SygWave
+SygWave
