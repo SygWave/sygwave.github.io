@@ -13,7 +13,7 @@ navbar-links:
 # Logo
 
 avatar: "/assets/images/logo-round.png"
-round-avatar: true
+round-avatar: false
 title-img: /assets/images/logo-square.png
 
 # Footer
