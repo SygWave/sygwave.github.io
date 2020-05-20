@@ -25,7 +25,6 @@ social-network-links:
 
 # Options
 
-# Select which social network share links to show in posts
 share-links-active:
   github: true
 
