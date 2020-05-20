@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Contact
+title: SygWave - Contact
 subtitle: SygWave wants to hear from you!
 ---
 
