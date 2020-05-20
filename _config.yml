@@ -12,9 +12,9 @@ navbar-links:
 
 # Logo
 
-avatar: "/assets/img/logo-square.png"
-round-avatar: false
-title-img: /assets/img/logo-round.png
+avatar: "/assets/images/logo-square.png"
+round-avatar: true
+title-img: /assets/images/logo-square.png
 
 # Footer
 
@@ -44,9 +44,9 @@ footer-col: "#F5F5F5"
 footer-text-col: "#777777"
 footer-link-col: "#404040"
 
-#navbar-img: "/assets/img/..."
-#footer-img: "/assets/img/..."
-#page-img: "/assets/img/..."
+#navbar-img: "/assets/images/..."
+#footer-img: "/assets/images/..."
+#page-img: "/assets/images/..."
 
 # Web
 
