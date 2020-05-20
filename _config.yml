@@ -89,6 +89,9 @@ defaults:
       layout: "page"
       show-avatar: true
 
+exclude:
+  - README.md
+
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
