@@ -12,7 +12,7 @@ navbar-links:
 
 # Logo
 
-avatar: "/assets/images/logo-square.png"
+#avatar: "/assets/images/logo-square.png"
 round-avatar: false
 title-img: /assets/images/logo-round.png
 
@@ -35,14 +35,14 @@ excerpt_length: 50
 # Background
 
 navbar-col: "#121212"
-navbar-text-col: "black"
-navbar-border-col: "black"
-page-col: "#c278c2"
-link-col: "#1be9d2"
-hover-col: "#05f9ac"
+navbar-text-col: "#000000"
+navbar-border-col: "#000000"
+page-col: "#C278C2"
+link-col: "#1BE9D2"
+hover-col: "#05F9AC"
 footer-col: "#121212"
-footer-text-col: "black"
-footer-link-col: "#1be9d2"
+footer-text-col: "#000000"
+footer-link-col: "#1BE9D2"
 
 #navbar-img: "/assets/images/..."
 #footer-img: "/assets/images/..."
