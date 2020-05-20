@@ -12,9 +12,9 @@ navbar-links:
 
 # Logo
 
-avatar: "/assets/img/logo-square.png"
+avatar: "/assets/img/logo-round.png"
 round-avatar: true
-title-img: /assets/img/logo-round.png
+title-img: /assets/img/logo-square.png
 
 # Footer
 
