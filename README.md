@@ -2,8 +2,6 @@
 
 The homepage of SygWave
 
-## Owners
+## Owner
 
 * SygWave
-
-* [Michael A. Agarenzo](https://magarenzo.com)
