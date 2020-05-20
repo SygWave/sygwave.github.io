@@ -1,6 +1,6 @@
 ---
 layout: page
-title: SygWave - About
+title: About
 subtitle: What is SygWave?
 ---
 
