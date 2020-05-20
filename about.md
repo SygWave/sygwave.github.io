@@ -4,4 +4,4 @@ title: About
 subtitle: What is SygWave?
 ---
 
-Coming soon.
+Coming soon...
