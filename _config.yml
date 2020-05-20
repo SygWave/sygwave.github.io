@@ -2,7 +2,7 @@
 
 title: SygWave
 description: The homepage of SygWave
-author: Michael A. Agarenzo
+author: SygWave
 
 # Nav
 
@@ -12,16 +12,15 @@ navbar-links:
 
 # Logo
 
-avatar: "/assets/img/logo-round.png"
-round-avatar: false
-#title-img: /assets/img/logo-square.png
+avatar: "/assets/img/logo-square.png"
+round-avatar: true
+title-img: /assets/img/logo-round.png
 
 # Footer
 
 social-network-links:
   #email: ""
-  github: sygwwave
-  linkedin: magarenzo
+  github: sygwave
   rss: false
 
 # Options
@@ -29,9 +28,8 @@ social-network-links:
 # Select which social network share links to show in posts
 share-links-active:
   github: true
-  linkedin: true
 
-url-pretty: "magarenzo.com"
+url-pretty: "sygwave.github.io"
 link-tags: true
 excerpt_length: 50
 
