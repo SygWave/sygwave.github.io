@@ -1,2 +1,0 @@
-FROM jekyll/jekyll:4.0.1
-LABEL maintainer="SygWave"
