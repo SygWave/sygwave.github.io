@@ -2,9 +2,11 @@
 
 Source for our current static website displayed at [sygwave.github.io](https://sygwave.github.io/)
 
-## Dependency
+## Dependencies
 
-[RepoDisplayerJS](https://github.com/magarenzo/RepoDisplayerJS)
+* [Formspree](https://formspree.io/)
+
+* [RepoDisplayerJS](https://github.com/magarenzo/RepoDisplayerJS)
 
 ## Owner
 
