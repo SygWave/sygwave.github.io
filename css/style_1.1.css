@@ -2,6 +2,7 @@ body {
     background-color: black;
     color: green;
     font-family: "Lucida Console", Courier, monospace;
+    margin-bottom: 100px;
 }
 
 h1,
@@ -15,6 +16,27 @@ hr {
 
 a {
     color: cyan;
+}
+
+input,
+textarea {
+    background-color: black;
+    color: green;
+    font-family: "Lucida Console", Courier, monospace;
+    border: 2px solid cyan;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: purple;
+}
+
+::-webkit-scrollbar-thumb {
+    background: green;
+    border-radius: 5px;
 }
 
 #wrapper {
