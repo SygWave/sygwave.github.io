@@ -1,0 +1,5 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://sygwave.github.io/sitemap.xml
+© 2020 GitHub, Inc.
