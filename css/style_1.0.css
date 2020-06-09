@@ -1,0 +1,36 @@
+body {
+    background-color: black;
+    color: green;
+    font-family: "Lucida Console", Courier, monospace;
+}
+
+h1,
+h2 {
+    color: purple;
+}
+
+hr {
+    border-color: green;
+}
+
+#wrapper {
+    max-width: 960px;
+    margin: auto;
+    position: relative;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+#content {
+    padding-top: 1em;
+}
+
+#footer {
+    background-color: green;
+    color: black;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
