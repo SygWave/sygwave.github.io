@@ -51,6 +51,8 @@ function repoDisplayer(id) {
 
             }
 
+            div.innerHTML = div.innerHTML.slice(0, -4);
+
         }).catch(function() {
 
             // If an error is thrown working with the JSON object, catch it and print the error string to the specified Div
