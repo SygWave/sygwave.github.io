@@ -43,7 +43,7 @@ function repoDisplayer(id) {
                         var language = JSON.stringify(jsonObject[key].language).split('"').join("");
 
                         div.innerHTML += "<h3><a href='" + url + "' target='_blank'>" + name + "</a></h3>";
-                        div.innerHTML += "<p>" + description + ", <strong>" + language + "</strong>.</p><br>";
+                        div.innerHTML += "<p>" + description + ", <strong>" + language + "</strong></p><br>";
 
                     }
 
