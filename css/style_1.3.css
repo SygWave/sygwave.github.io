@@ -1,3 +1,8 @@
+@keyframes coding {
+    from { width: 0 }
+    to { width: 100% }
+}
+
 body {
     background-color: black;
     color: green;
@@ -41,6 +46,13 @@ a {
 
 #content {
     padding-top: 1em;
+}
+
+#main-bio,
+#projects-fill p {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: coding 3.5s steps(40, end);
 }
 
 #footer {
