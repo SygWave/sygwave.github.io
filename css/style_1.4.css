@@ -64,3 +64,12 @@ a {
     bottom: 0;
     width: 100%;
 }
+
+@media (max-width: 960px) {
+    #main-bio,
+    #projects-fill p {
+        overflow: visible;
+        white-space: normal;
+        animation: none;
+}
+}
