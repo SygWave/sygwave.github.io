@@ -23,6 +23,11 @@ a {
     color: cyan;
 }
 
+a:hover {
+    color: purple;
+    background-color: cyan;
+}
+
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -71,5 +76,5 @@ a {
         overflow: visible;
         white-space: normal;
         animation: none;
-}
+    }
 }
