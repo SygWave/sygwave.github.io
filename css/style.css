@@ -28,6 +28,27 @@ a:hover {
     background-color: cyan;
 }
 
+textarea {
+    background-color: black;
+    color: green;
+    border: 1px solid cyan;
+}
+
+input {
+    background: none;
+    border: none;
+    color: cyan;
+    padding: 0;
+    text-decoration: underline;
+}
+
+input:hover {
+    color: purple;
+    background-color: cyan;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 ::-webkit-scrollbar {
     width: 10px;
 }
