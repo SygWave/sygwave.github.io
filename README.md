@@ -12,7 +12,7 @@ We use [http-server](https://www.npmjs.com/package/http-server) via [Node.js](ht
 
 ## Demo
 
-[PrivateRedirectJS](https://github.com/SygWave/PrivateRedirectJS) hosted at https://sygwave.github.io/demos/PrivateRedirectJS/
+[PrivateRedirectJS](https://github.com/SygWave/PrivateRedirectJS) hosted at [https://sygwave.github.io/demos/PrivateRedirectJS/](https://sygwave.github.io/demos/PrivateRedirectJS/)
 
 ## Owner
 
