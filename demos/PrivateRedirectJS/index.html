@@ -31,19 +31,29 @@
             if (isNotEmpty(input)) {
                 if (id == "bibliogram") {
                     var bibliogram = "https://bibliogram.art/";
-                    var key = "p/";
-                    if (input.includes(key)) {
-                        outputElement.innerText = bibliogram + key + input.split(key)[1];
+                    var key = "instagram.com/";
+                    if (input.includes(key + "p/")) {
+                        setAnchor(outputElement, bibliogram + input.split(key)[1]);
+                    } else if (input.includes(key)) {
+                        setAnchor(outputElement, bibliogram + "u/" + input.split(key)[1]);
                     } else {
-                        outputElement.innerText = bibliogram + "u/" + input;
+                        setAnchor(outputElement, bibliogram + "u/" + input);
                     }
                 } else if (id == "nitter") {
-                    var nitter = "https://nitter.net/"
+                    var nitter = "https://nitter.net/";
                     var key = "twitter.com/";
                     if (input.includes(key)) {
-                        outputElement.innerText = nitter + input.split(key)[1];
+                        setAnchor(outputElement, nitter + input.split(key)[1]);
                     } else {
-                        outputElement.innerText = nitter + input;
+                        setAnchor(outputElement, nitter + input);
+                    }
+                } else if (id == "invidious") {
+                    var invidious = "https://invidiou.site/";
+                    var key = "youtube.com/";
+                    if (input.includes(key)) {
+                        setAnchor(outputElement, invidious + input.split(key)[1]);
+                    } else {
+                        setAnchor(outputElement, invidious + "channel/" + input);
                     }
                 }
             } else {
@@ -53,6 +63,11 @@
 
         function isNotEmpty(str) {
             return !(str == "" || str === null || /\s/.test(str));
+        }
+
+        function setAnchor(element, link) {
+            element.innerText = link;
+            element.href = link;
         }
 
         function reset(element) {
