@@ -10,9 +10,9 @@ We use [http-server](https://www.npmjs.com/package/http-server) via [Node.js](ht
 
 [RepoDisplayerJS](https://github.com/magarenzo/RepoDisplayerJS)
 
-## Demo
+## Hosted Demos
 
-[PrivateRedirectJS](https://github.com/SygWave/PrivateRedirectJS) hosted at [https://sygwave.github.io/demos/PrivateRedirectJS/](https://sygwave.github.io/demos/PrivateRedirectJS/)
+* [PrivateRedirectJS](https://github.com/SygWave/PrivateRedirectJS) hosted at [https://sygwave.github.io/demos/PrivateRedirectJS/](https://sygwave.github.io/demos/PrivateRedirectJS/)
 
 ## Owner
 
