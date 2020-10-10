@@ -30,8 +30,8 @@ a:hover {
 
 input {
     background-color: black;
-    color: white;
-    border: 1px solid white;
+    color: green;
+    border: 1px solid green;
 }
 
 ::-webkit-scrollbar {
