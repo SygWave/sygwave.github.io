@@ -1,6 +1,10 @@
 @keyframes coding {
-    from { width: 0 }
-    to { width: 100% }
+    from {
+        width: 0
+    }
+    to {
+        width: 100%
+    }
 }
 
 body {
@@ -32,6 +36,7 @@ input {
     background-color: black;
     color: green;
     border: 1px solid green;
+    font-family: "Lucida Console", Courier, monospace;
 }
 
 ::-webkit-scrollbar {
@@ -47,8 +52,15 @@ input {
     border-radius: 5px;
 }
 
+.buttons {
+    color: cyan;
+    border: 1px solid cyan;
+}
+
 .buttons:hover {
     cursor: pointer;
+    color: purple;
+    background-color: cyan;
 }
 
 #wrapper {

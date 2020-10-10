@@ -19,17 +19,22 @@
             <h1>PrivatePlatformReconstructionJS</h1>
             <p class="animation"><em>Reconstruct social links to privacy-friendly front-ends</em></p>
             <hr>
-        
-            <p class="animation"><strong>Instagram to <a target="_blank" href="https://github.com/cloudrac3r/bibliogram">Bibliogram</a></strong><br><em>Enter full direct link to Instagram profile or post</em></p>
-            <p class="animation"><strong>Twitter to <a target="_blank" href="https://github.com/zedeus/nitter">nitter</a></strong><br><em>Enter full direct link to Twitter profile or tweet</em></p>
-            <p class="animation"><strong>YouTube to <a target="_blank" href="https://github.com/iv-org/invidious">Invidious</a></strong><br><em>Enter full direct link to YouTube channel or video</em></p>
-        
+
+            <p class="animation"><strong>Instagram to <a target="_blank" href="https://github.com/cloudrac3r/bibliogram">Bibliogram</a></strong></p>
+            <p><em>Enter full direct link to Instagram profile or post</em></p>
+            <p class="animation"><strong>Twitter to <a target="_blank" href="https://github.com/zedeus/nitter">nitter</a></strong></p>
+            <p><em>Enter full direct link to Twitter profile or tweet</em></p>
+            <p class="animation"><strong>YouTube to <a target="_blank" href="https://github.com/iv-org/invidious">Invidious</a></strong></p>
+            <p><em>Enter full direct link to YouTube channel or video</em></p>
+
             <p><input id="input" type="text"></p>
             <p>
                 <input type="submit" value="Convert" class="buttons" onclick="privatePlatformReconstruction();">
                 <input type="reset" value="Clear" class="buttons" onclick="reset();">
             </p>
-            <p><a target="_blank" id="output"></a></p>
+            <p>
+                <a target="_blank" id="output"></a>
+            </p>
         </div>
         <div id="footer">
             <p><em>&copy; 2020 SygWave</em></p>
@@ -37,9 +42,15 @@
     </div>
 
     <script>
+        document.getElementById("input").addEventListener("keyup", function(event) {
+            if (event.keyCode === 13) {
+                privatePlatformReconstruction();
+            }
+        });
+
         function privatePlatformReconstruction() {
             var outputElement = document.getElementById("output");
-            var input = document.getElementById("input").value;
+            var input = document.getElementById("input").value.toLowerCase();
             outputElement.innerText = "";
             if (isNotEmpty(input)) {
                 var instagram = "instagram.com/";
@@ -58,13 +69,16 @@
                 }
             }
         }
+
         function isNotEmpty(str) {
             return !(str == "" || str === null || /\s/.test(str));
         }
+
         function setAnchor(element, link) {
             element.innerText = link;
             element.href = link;
         }
+
         function reset() {
             document.getElementById("input").value = "";
             document.getElementById("output").innerText = "";
