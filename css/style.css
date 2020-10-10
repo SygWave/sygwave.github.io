@@ -28,6 +28,12 @@ a:hover {
     background-color: cyan;
 }
 
+input {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -39,6 +45,10 @@ a:hover {
 ::-webkit-scrollbar-thumb {
     background: green;
     border-radius: 5px;
+}
+
+.buttons:hover {
+    cursor: pointer;
 }
 
 #wrapper {
@@ -53,8 +63,7 @@ a:hover {
     padding-top: 1em;
 }
 
-#main-bio,
-#projects-fill p {
+.animation {
     overflow: hidden;
     white-space: nowrap;
     animation: coding 3.5s steps(40, end);
@@ -71,8 +80,7 @@ a:hover {
 }
 
 @media (max-width: 960px) {
-    #main-bio,
-    #projects-fill p {
+    .animation {
         overflow: visible;
         white-space: normal;
         animation: none;
