@@ -12,7 +12,7 @@ We use [http-server](https://www.npmjs.com/package/http-server) via [Node.js](ht
 
 ## Hosted Projects
 
-[PrivatePlatformReconstructionJS](https://github.com/SygWave/PrivatePlatformReconstructionJS) deployed at [https://sygwave.github.io/PrivatePlatformReconstructionJS/](https://sygwave.github.io/PrivatePlatformReconstructionJS/)
+[PrivatePlatformReconstructionJS](https://github.com/SygWave/PrivatePlatformReconstructionJS) deployed at [https://sygwave.github.io/projects/PrivatePlatformReconstructionJS/](https://sygwave.github.io/projects/PrivatePlatformReconstructionJS/)
 
 ## Owner
 
