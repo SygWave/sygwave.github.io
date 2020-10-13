@@ -1,24 +1,26 @@
-/**
- * Fetch repositories listed on a GitHub user's profile and display it via HTML
- * @param {String} id
- */
-
 function repoDisplayer(id) {
 
     const profileName = "sygwave";
     const skippedProjects = [];
-    const errorString = "<p>Check out all of our projects <a href='https://github.com/" + profileName + "?tab=repositories' target='_blank'>here</a> on our GitHub profile</p>";
+    const blank = "_blank";
+
+    var error = document.createElement("p");
+    error.append("Check out all of our projects ");
+    var errorAnchor = document.createElement("a");
+    errorAnchor.innerText = "here";
+    errorAnchor.href = "https://github.com/" + profileName + "?tab=repositories";
+    errorAnchor.target = blank;
+    error.append(errorAnchor);
+    error.append(" on our GitHub profile");
 
     const div = document.getElementById(id);
 
-    // Continue if we captured a Div specified by the passed-in ID
     if (div) {
 
         fetch("https://api.github.com/users/" + profileName + "/repos").then((response) => {
 
-            // If the API's response is anything other than successful, print the error string to the specified Div
             if (response.status != 200) {
-                div.innerHTML += errorString;
+                div.append(error);
             }
 
             return response.json()
@@ -27,39 +29,42 @@ function repoDisplayer(id) {
 
             for (var key in jsonObject) {
 
-                // Continue if every value we want exists
                 if (jsonObject[key].name &&
                     jsonObject[key].html_url &&
                     jsonObject[key].description &&
-                    jsonObject[key].language) {
+                    jsonObject[key].language &&
+                    jsonObject[key].homepage) {
 
                     var name = JSON.stringify(jsonObject[key].name).split('"').join("");
 
-                    // Continue if we want to include the current project
                     if (!skippedProjects.includes(name)) {
-
-                        var url = JSON.stringify(jsonObject[key].html_url).split('"').join("");
+                        var homepage = JSON.stringify(jsonObject[key].homepage).split('"').join("");
                         var description = JSON.stringify(jsonObject[key].description).split('"').join("");
                         var language = JSON.stringify(jsonObject[key].language).split('"').join("");
+                        var repoLink = JSON.stringify(jsonObject[key].html_url).split('"').join("");
 
-                        div.innerHTML += "<h3><a href='" + url + "' target='_blank'>" + name + "</a></h3>";
-                        div.innerHTML += "<p>" + description + ", <strong>" + language + "</strong></p><br>";
+                        var anchor = document.createElement("a");
+                        anchor.innerText = name;
+                        anchor.href = homepage;
+                        anchor.target = blank;
 
+                        var header = document.createElement("h3");
+                        header.append(anchor);
+                        div.append(header);
+
+                        var paragraph = document.createElement("p");
+                        var anchor2 = document.createElement("a");
+                        anchor2.innerText = language;
+                        anchor2.href = repoLink;
+                        anchor2.target = blank;
+                        paragraph.innerText = description + ", ";
+                        paragraph.append(anchor2);
+                        div.append(paragraph);
                     }
-
                 }
-
             }
-
-            div.innerHTML = div.innerHTML.slice(0, -4);
-
         }).catch(function() {
-
-            // If an error is thrown working with the JSON object, catch it and print the error string to the specified Div
-            div.innerHTML += errorString;
-
+            div.append(error);
         });
-
     }
-
 }
