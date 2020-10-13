@@ -1,6 +1,6 @@
 # SygWave
 
-Source for our current static website displayed at [sygwave.github.io](https://sygwave.github.io/)
+Source for our current static website
 
 ## Development
 
