@@ -32,13 +32,6 @@ a:hover {
     background-color: cyan;
 }
 
-input {
-    background-color: black;
-    color: green;
-    border: 1px solid green;
-    font-family: "Lucida Console", Courier, monospace;
-}
-
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -50,17 +43,6 @@ input {
 ::-webkit-scrollbar-thumb {
     background: green;
     border-radius: 5px;
-}
-
-.buttons {
-    color: cyan;
-    border: 1px solid cyan;
-}
-
-.buttons:hover {
-    cursor: pointer;
-    color: purple;
-    background-color: cyan;
 }
 
 #wrapper {
