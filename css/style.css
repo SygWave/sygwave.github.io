@@ -73,6 +73,10 @@ a:hover {
     width: 100%;
 }
 
+#home-link {
+    text-align: right;
+}
+
 @media (max-width: 960px) {
     .animation {
         overflow: visible;
