@@ -45,6 +45,10 @@ a:hover {
     border-radius: 5px;
 }
 
+.right {
+    text-align: right;
+}
+
 #wrapper {
     max-width: 960px;
     margin: auto;
@@ -71,10 +75,6 @@ a:hover {
     left: 0;
     bottom: 0;
     width: 100%;
-}
-
-#home-link {
-    text-align: right;
 }
 
 @media (max-width: 960px) {
