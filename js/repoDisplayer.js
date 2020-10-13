@@ -46,7 +46,6 @@ function repoDisplayer(id) {
                         var anchor = document.createElement("a");
                         anchor.innerText = name;
                         anchor.href = homepage;
-                        anchor.target = blank;
 
                         var header = document.createElement("h3");
                         header.append(anchor);
