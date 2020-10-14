@@ -1,5 +1,4 @@
 function repoDisplayer(id) {
-
     const profileName = "sygwave";
     const skippedProjects = [];
     const blank = "_blank";
@@ -14,9 +13,7 @@ function repoDisplayer(id) {
     error.append(" on our GitHub profile");
 
     const div = document.getElementById(id);
-
     if (div) {
-
         fetch("https://api.github.com/users/" + profileName + "/repos").then((response) => {
 
             if (response.status != 200) {
@@ -24,11 +21,8 @@ function repoDisplayer(id) {
             }
 
             return response.json()
-
         }).then((jsonObject) => {
-
             for (var key in jsonObject) {
-
                 if (jsonObject[key].name &&
                     jsonObject[key].html_url &&
                     jsonObject[key].description &&
