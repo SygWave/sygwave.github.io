@@ -2,6 +2,8 @@
 
 Source for our current static website
 
+[https://sygwave.github.io](https://sygwave.github.io)
+
 ## Development
 
 We use [http-server](https://www.npmjs.com/package/http-server) via [Node.js](https://nodejs.org/en/) and [npm](https://www.npmjs.com/) to serve our website locally for development with the command `http-server -p 80 -a localhost`
