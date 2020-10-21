@@ -40,6 +40,7 @@ function repoDisplayer(id) {
                         } else {
                             anchor.innerText = name;
                             anchor.href = repoLink;
+                            anchor.target = blank;
                         }
 
                         var description = JSON.stringify(jsonObject[key].description).split('"').join("");
