@@ -22,24 +22,28 @@ function repoDisplayer(id) {
 
             return response.json()
         }).then((jsonObject) => {
+            console.log(jsonObject);
             for (var key in jsonObject) {
                 if (jsonObject[key].name &&
                     jsonObject[key].html_url &&
                     jsonObject[key].description &&
-                    jsonObject[key].language &&
-                    jsonObject[key].homepage) {
+                    jsonObject[key].language) {
 
                     var name = JSON.stringify(jsonObject[key].name).split('"').join("");
 
                     if (!skippedProjects.includes(name)) {
-                        var homepage = JSON.stringify(jsonObject[key].homepage).split('"').join("");
+                        var anchor = document.createElement("a");
+                        var repoLink = JSON.stringify(jsonObject[key].html_url).split('"').join("");
+                        if (jsonObject[key].homepage) {
+                            anchor.innerText = name;
+                            anchor.href = JSON.stringify(jsonObject[key].homepage).split('"').join("");
+                        } else {
+                            anchor.innerText = name;
+                            anchor.href = repoLink;
+                        }
+
                         var description = JSON.stringify(jsonObject[key].description).split('"').join("");
                         var language = JSON.stringify(jsonObject[key].language).split('"').join("");
-                        var repoLink = JSON.stringify(jsonObject[key].html_url).split('"').join("");
-
-                        var anchor = document.createElement("a");
-                        anchor.innerText = name;
-                        anchor.href = homepage;
 
                         var header = document.createElement("h3");
                         header.append(anchor);
