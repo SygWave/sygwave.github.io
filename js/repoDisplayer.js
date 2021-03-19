@@ -55,7 +55,7 @@ function repoDisplayer(id) {
                         anchor2.innerText = language;
                         anchor2.href = repoLink;
                         anchor2.target = blank;
-                        paragraph.innerText = description + ", ";
+                        paragraph.innerText = description + " ";
                         paragraph.append(anchor2);
                         div.append(paragraph);
                     }
